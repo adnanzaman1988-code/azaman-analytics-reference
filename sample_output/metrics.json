@@ -1,0 +1,71 @@
+{
+  "reconciliation": {
+    "invoices": 20000,
+    "bank_lines": 20139,
+    "lines_auto_matched": 19614,
+    "line_match_rate": 0.9739,
+    "value_match_rate": 0.9802,
+    "exceptions": 525,
+    "exceptions_by_reason": {
+      "unidentified receipt": 250,
+      "possible duplicate payment": 168,
+      "short payment outside policy": 85,
+      "payer identified, no matching open invoice": 22
+    },
+    "matches_by_pass": {
+      "P1 exact reference": 13683,
+      "P4 split payment": 2504,
+      "P6 amount and payer": 1396,
+      "P3 short-paid within policy": 1180,
+      "P2 reference typo corrected": 597,
+      "P5 combined payment": 170,
+      "P1 multi-reference remittance": 84
+    },
+    "runtime_seconds": 0.35,
+    "precision": 1.0,
+    "recall": 0.9965,
+    "incorrect_pairs": 0,
+    "duplicates_planted": 168,
+    "duplicates_flagged": 168,
+    "noise_lines_wrongly_matched": 0
+  },
+  "month_end": {
+    "gl_lines": 198660,
+    "journals": 77421,
+    "entities": 3,
+    "checks": 10,
+    "checks_passed": 10,
+    "lines_needing_commentary": 1,
+    "revenue_aud": 12170549.52,
+    "runtime_seconds": 0.29,
+    "pack": "output/month_end/month_end_pack_2026-09.xlsx"
+  },
+  "s4_rebuild": {
+    "first_run": {
+      "legacy_line_items": 166919,
+      "migrated_line_items": 166922,
+      "cells_compared": 120,
+      "cells_matched": 95,
+      "cells_different": 25,
+      "net_difference": 5765.92,
+      "unmapped_accounts": [
+        "66000000"
+      ],
+      "documents_with_line_count_breaks": [
+        "0100000017"
+      ],
+      "runtime_seconds": 0.3
+    },
+    "after_remediation": {
+      "legacy_line_items": 166919,
+      "migrated_line_items": 166919,
+      "cells_compared": 108,
+      "cells_matched": 108,
+      "cells_different": 0,
+      "net_difference": 0.0,
+      "unmapped_accounts": [],
+      "documents_with_line_count_breaks": [],
+      "runtime_seconds": 0.31
+    }
+  }
+}
